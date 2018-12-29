@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Date Function</title>
+</head>
+<body>
+
+    <script>
+    
+        function Date(){
+            var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+            var now = new Date();
+            var theDay = now.getDay();
+            var nameOfToday = dayNames[theDay];
+            alert(now);
+        }
+    </script>
+    <input type="button" value="Check Date" onclick="Date()">
+</body>
+</html>

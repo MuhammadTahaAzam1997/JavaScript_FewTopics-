@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Math Function in JS</title>
+</head>
+<body>
+    <script>
+    
+    function Mathfun(){
+
+        var num=prompt("Enter any number");
+
+        var round=Math.round(num);
+        var ceil=Math.ceil(num);
+        var floor=Math.floor(num);
+        var random=Math.random();
+
+        document.writeln("Round off number is"+round+"\n");
+        document.writeln("Ceil number is"+ceil+"\n");
+        document.writeln("Floor number is"+floor+"\n");
+        document.writeln("Random number is"+(random*6)+"\n");
+    }
+
+    function parsing(){
+
+        var num=prompt("Enter any number");
+        var number=18+num;
+        
+        var numb=18+parseInt(num);
+        alert(numb+" "+number);
+
+    }
+    </script>
+<input type="button" value="check math functions" onclick="Mathfun()">
+<input type="button" value="parsing" onclick="parsing()">
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Finding character location in name</title>
+</head>
+<body>
+    
+    <script>
+    
+    function FirstChar(){
+
+        var name=prompt("Enter your name");
+        var char=name.charAt(0);
+        alert("The first character of your name is '"+char+"'");
+
+    }
+
+    function LastChar(){
+        var name=prompt("Enter your name");
+        var last=name.charAt(name.length-1);
+        alert("The last character of your name is "+last);
+    }
+
+    function checkExc(){
+
+        var name=prompt("Enter name: ");
+        for(var i=0; i<name.length;i++){
+            if(name[i]==='!'){
+                alert("! FOUND IN YOUR NAME");
+            }
+            else{
+                alert("No ! found in "+name);
+            }
+        }
+
+    }
+    </script>
+
+    <input type="button" value="First character" onclick="FirstChar()">
+    <input type="button" value="Last character" onclick="LastChar()">
+    <input type="button" value="Exclamationn" onclick="checkExc()">
+</body>
+</html>
